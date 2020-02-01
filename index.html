@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="calc">
+            <h2>Расчет стоимости</h2>
+            <label for="card-edition">Выбрать тираж</label>
+            <select class="form-control" name="edition" id="card-edition">
+              <option value="90">90</option>
+              <option value="120">120</option>
+              <option value="150">150</option>
+              <option value="180">180</option>
+              <option value="210">210</option>
+              <option value="240">240</option>
+              <option value="270">270</option>
+              <option value="300">300</option>
+              <option value="360">360</option>
+              <option value="420">420</option>
+              <option value="510">510</option>
+              <option value="600">600</option>
+              <option value="900">900</option>
+              <option value="1020">1020</option>
+              <option value="1500">1500</option>
+              <option value="3000">3000</option>
+            </select>
+            <br>
+            <label for="card-paper">Выберите бумагу</label>
+            <select name="card-paper" id="card-paper" class="form-control">
+              <option data-paper-ratio="6.8" value="Мелованная бумага">Мелованная бумага</option>
+              <option data-paper-ratio="40.5" value="Бумага с повышенной белизной">Бумага с повышенной белизной</option>
+              <option data-paper-ratio="45" value="Prestige Лен (белый)">Prestige Лен (белый)</option>
+            </select>
+            <br>
+            <label for="card-color">Выберите цветность</label>
+            <select name="card-color" id="card-color" class="form-control">
+              <option data-print="14" data-print-file = "110" value="Односторонняя черно-белая">Односторонняя черно-белая</option data-print-file = "">
+              <option data-print="28" data-print-file = "220" value="Двусторонняя черно-белая">Двусторонняя черно-белая</option>
+              <option data-print="37" data-print-file = "110" value="Односторонняя цветная">Односторонняя цветная</option>
+              <option data-print="51" data-print-file = "220" value="Цветная + черно-белая">Цветная + черно-белая</option>
+              <option data-print="74" data-print-file = "220" value="Двусторонняя цветная">Двусторонняя цветная</option>
+            </select>
+            <br>
+            <h4>
+              <small>Приблизительная </small>
+              Стоимость за тираж 
+            </h4>
+            <p class="price">
+              <span id="final-price">0</span>
+                грн.
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-sm-6"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
